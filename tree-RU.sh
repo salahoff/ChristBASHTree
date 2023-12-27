@@ -33,7 +33,7 @@ new_year=$(date +'%Y')
 let new_year++
 tput setaf 1; tput bold
 tput cup $lin $((c - 6)); echo С Новым Годом!
-tput cup $((lin + 1)) $((c - 6)); echo Профессиональных успехов в $new_year году!
+tput cup $((lin + 1)) $((c - 10)); echo Профессиональных успехов в $new_year году!
 let c++
 k=1
 
