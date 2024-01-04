@@ -30,7 +30,7 @@ for ((i=1; i<=2; i++))
     echo 'mWm'
 }
 new_year=$(date +'%Y')
-let new_year++
+#let new_year++
 tput setaf 1; tput bold
 tput cup $lin $((c - 6)); echo С Новым Годом!
 tput cup $((lin + 1)) $((c - 10)); echo Профессиональных успехов в $new_year году!
@@ -56,15 +56,15 @@ while true; do
         line[$k$i]=$li
         column[$k$i]=$co
         color=$(((color+1)%8))
-       # Flashing text
-       # sh=1
-       # for l in C O D E
-       #  do
-       #     tput cup $((lin+1)) $((c+sh))
-       #     echo $l
-       #     let sh++
-       #     sleep 0.01
-       # done
+        Flashing text
+        sh=1
+        for l in C O D E
+         do
+            tput cup $((lin+1)) $((c+sh))
+            echo $l
+            let sh++
+            sleep 0.01
+        done
     }
     k=$((k % 2 + 1))
 done
